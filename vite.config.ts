@@ -13,4 +13,11 @@ export default defineConfig({
     css: true,
     setupFiles: './src/test/setup.ts',
   },
+  server: {
+    watch: {
+      usePolling: true,  // Ensures Vite detects changes inside Docker
+    },
+    host: '0.0.0.0', // Allows access inside Docker
+    port: 5173, // Matches Docker's exposed port
+  }
 })

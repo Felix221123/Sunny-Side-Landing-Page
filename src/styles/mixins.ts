@@ -2,9 +2,9 @@
 import { css } from 'styled-components'
 
 
-export const flexCenter = (direction: string) => css`
+export const flexCenter = (direction: string,justify?: string) => css`
   display: flex;
-  justify-content: center;
+  justify-content: ${justify};
   align-items: center;
   flex-direction: ${direction};
 `
@@ -62,6 +62,10 @@ export const fontSize50px = () => css`
   font-size: clamp(3.125rem, 3.125vw, 3.13rem);
 `;
 
+export const fontSize56px = () => css`
+  font-size: clamp(3.5rem, 3.55vw, 3.56rem);
+`;
+
 export const fontSize60px = () => css`
   font-size: clamp(3.75rem, 3.76vw, 3.78rem);
 `;
@@ -85,5 +89,35 @@ export const hiddenElementLessThan767px = css`
   }
 `
 
+export const hiddenElementMoreThan768px = css`
+  @media (min-width:768px) {
+      display: none;
+  }
+`
 
+export const hiddenElementMoreThan1440px = css`
+  @media (min-width:1440px) {
+      display: none;
+  }
+`
+
+export const SizeofOriginalContentsForDevicesMoreThan1440px = css`
+  @media (min-width:1440px) {
+    width: 90rem;
+    margin-inline: auto;
+}
+`
+
+export const backgroundImage = (imageUrl: string) => css`
+  background-image: url(${imageUrl});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+`;
+
+export const transitionHovers = css`
+  &:hover{
+    transition:all 0.5s;
+  }
+`
 

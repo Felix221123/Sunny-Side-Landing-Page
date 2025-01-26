@@ -6,5 +6,8 @@ services:
       dockerfile: Dockerfile  # Optional if the file is named 'Dockerfile'
     ports:
       - "5173:5173"           # Map the container port to your host port
+    volumes:
+      - .:/app  # Mount the project directory into the container
+      - /app/node_modules
 
     command: npm run dev     # Command to start the application

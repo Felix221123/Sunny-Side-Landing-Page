@@ -12,6 +12,7 @@ export const theme = {
     darkGrayishBlue: "hsl(232, 10%, 55%)",
     grayishBlue:"hsl(210, 4%, 67%)",
     whiteClr: "hsl(0, 0%, 100%)",
+    footerClr: "#90D4C6",
   },
   fonts: {
     barlow:'"Barlow", serif',
