@@ -28,25 +28,25 @@ export const TextImageGrid: React.FC = () => {
       <GridContainer>
         {/* First row - Reversed on Mobile */}
         <Row $reverse={true} className='first-col-reverse'>
-          <ImageBlock $bgdesktop={EggDesktopImg} $bgmobile={EggMobileImg} className="image" />
+          <ImageBlock $bgdesktop={EggDesktopImg} $bgmobile={EggMobileImg} className="image" data-testid='egg_image'/>
           <TextBlock className="text">
             <h2 className='font-black'>Transform your brand</h2>
             <p className="description font-semibold">
               We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.
             </p>
-            <a href="#" className='font-black'>LEARN MORE</a>
+            <a data-testid='learn_more_link' href="#" className='font-black'>LEARN MORE</a>
           </TextBlock>
         </Row>
 
         {/* Second row - Normal order */}
         <Row>
-          <ImageBlock className="image" $bgdesktop={CupDesktopImg} $bgmobile={CupMobileImg} />
+          <ImageBlock className="image" $bgdesktop={CupDesktopImg} $bgmobile={CupMobileImg} data-testid='cup_image'/>
           <TextBlock className="text">
             <h2 className='font-black'>Stand out to the right audience</h2>
             <p className="description font-semibold">
               Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.
             </p>
-            <a href="#" className='font-black'>LEARN MORE</a>
+            <a data-testid='learn_more_link' href="#" className='font-black'>LEARN MORE</a>
           </TextBlock>
         </Row>
       </GridContainer>

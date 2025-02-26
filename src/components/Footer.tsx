@@ -20,10 +20,10 @@ export const Footer:React.FC = () => {
         </ul>
 
         <div className="socialIcons cursor-pointer">
-          <img src={facebookLogo} alt="facebook logo" />
-          <img src={instagram} alt="instagram logo" />
-          <img src={twitter} alt="twitter logo" />
-          <img src={PinInterest} alt="pinterest logo" />
+          <img src={facebookLogo} alt="facebook_logo" />
+          <img src={instagram} alt="instagram_logo" />
+          <img src={twitter} alt="twitter_logo" />
+          <img src={PinInterest} alt="pinterest_logo" />
         </div>
       </FooterContainer>
     </>

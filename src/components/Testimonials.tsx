@@ -44,7 +44,7 @@ export const Testimonials: React.FC = () => {
     <>
       <H4 className="testimonials__title text-center font-black uppercase"> client testimonials</H4>
       {/* Testimonials container */}
-      <TestimonialsContainer>
+      <TestimonialsContainer data-testid="testimonials-container">
         {testimonials.map((testimonial, index) => (
           <div className="testimonials__card" key={index}>
             <div className="testimonials__card__img">
@@ -59,7 +59,7 @@ export const Testimonials: React.FC = () => {
         ))}
       </TestimonialsContainer>
       {/* photo gallery */}
-      <GridContainer $photoGallery={true}>
+      <GridContainer $photoGallery={true} data-testid="grid_container">
         <ImageBlock $bgdesktop={MilkBottlesDesktopImg} $bgmobile={MilkBottlesMobileImg} $photoGallery={true} />
         <ImageBlock $bgdesktop={OrangeDesktopImg} $bgmobile={OrangeMobileImg} $photoGallery={true} />
         <ImageBlock $bgdesktop={ConeDesktopImg} $bgmobile={ConeMobileImg} $photoGallery={true} />

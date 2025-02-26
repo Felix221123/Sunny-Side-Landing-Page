@@ -44,7 +44,7 @@ export const Navbar: React.FC = () => {
       <NavbarContainer>
         {/* header and nav */}
         <Header>
-          <img src={Logo} alt='logo' />
+          <img src={Logo} alt='logo' data-testid="logo" id='logo'/>
 
           {/* nav */}
           <nav>
@@ -75,8 +75,9 @@ export const Navbar: React.FC = () => {
             animate="visible"
             exit="exit"
             variants={getMenuAnimationVariants()}
+            data-testid="menuContainer"
           >
-            <img src={CloseBtn} alt="close btn" className='closeBtn' onClick={handleCloseBtnClick}/>
+            <img src={CloseBtn} alt="close_btn" className='closeBtn' onClick={handleCloseBtnClick}/>
             <ul>
               <li onClick={handleCloseBtnClick}>About</li>
               <li onClick={handleCloseBtnClick}>Services</li>

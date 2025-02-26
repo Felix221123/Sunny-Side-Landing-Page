@@ -12,7 +12,6 @@ export const H4 = styled.h4`
   margin-top: 5rem;
   margin-bottom: 2.5rem;
 
-
   @media (min-width: 768px) {
     ${fontSize20px};
     letter-spacing: 4px;

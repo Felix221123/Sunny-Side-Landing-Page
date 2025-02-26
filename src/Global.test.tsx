@@ -5,9 +5,8 @@ import { describe, it, expect } from 'vitest'
 import App from './App'
 
 describe('App Component', () => {
-  it('it should display hello world', () => {
+  it('it should display the logo in the navbar component', () => {
     render(<App />)
-    expect(screen.getByText(/hello world/i)).toBeInTheDocument()
-    expect(screen.getByText(/hello world/i)).toBeVisible()
+    expect(screen.getByTestId("logo")).toBeInTheDocument()
   })
 })

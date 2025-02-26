@@ -6,6 +6,6 @@ describe('<App />', () => {
   it('renders', () => {
     // see: https://on.cypress.io/mounting-react
     cy.mount(<App />)
-    cy.contains('hello world').should('exist')
+    cy.get('#logo').should('exist')
   })
 })
